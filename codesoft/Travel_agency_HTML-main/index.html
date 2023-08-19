@@ -1,0 +1,338 @@
+
+<html>
+<head>
+	<title>BD-Traveller</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<meta name="viewpoint" content="width-device-width,initial-scale=1.0">
+	<link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<style>
+
+
+input[type=text], input[type=password] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 26px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+	font-size:16px;
+}
+
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 26px;
+    border: none;
+    cursor: pointer;
+    width: 90%;
+	font-size:20px;
+}
+button:hover {
+    opacity: 0.8;
+}
+
+
+.imgcontainer {
+    text-align: center;
+    margin: 12px 0 0px 0;
+    position: center;
+}
+.avatar {
+    width: 200px;
+	height:200px;
+    border-radius: 50%;
+
+}
+
+
+.modal {
+	display:none;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 4% auto 15% auto;
+    border: 1px solid #888;
+    width: 40%; 
+	padding-bottom: 30px;
+}
+
+
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+.close:hover,.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+.animate {
+    animation: zoom 0.6s
+}
+@keyframes zoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+</style>
+</style>
+<body>
+
+
+
+
+<section class="header">
+	
+<div class="container">
+	<img src="image/travel_logo_1.png" style="float: left;">
+	
+
+<button class="login-btn" onclick="document.getElementById('modal-wrapper').style.display='block'">
+login</button>
+
+<div id="modal-wrapper" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+        
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+      <img src="image/1.png" alt="Avatar" class="avatar">
+      <h1 style="text-align:center; color:black; padding-top: 50px;">User Login Form</h1>
+    </div>
+
+    <div class="container">
+      <input type="text" placeholder="Enter Username" name="uname">
+      <input type="password" placeholder="Enter Password" name="psw">        
+      <button type="submit">Login</button>
+      
+      <a href="#" style="text-decoration:none; float:right; margin-right:34px; margin-top:26px;">Forgot Password ?</a>
+    </div>
+    
+  </form>
+  
+</div>
+
+</div>
+
+
+<script>
+// If user clicks anywhere outside of the modal, Modal will close
+
+var modal = document.getElementById('modal-wrapper');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<h1>TRAVEL WITH NO REGRETS</h1>
+<p>Cover The Earth Before It Covers You</p>
+<div class="input-group">
+	<input type="text" class="form-control" placeholder="search country or city">
+	<div class="input-group-append">
+		<button type="button" class="input-group-text btn">Search</button>
+	</div> 
+</section>
+
+
+<section class="features">
+	<h1>Featured Destination</h1>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="feature-box">
+					<div class="feature-img">
+					<img src="goa.jpg">
+					<div class="price">
+						<p>5000RS </p>
+						</div>
+							<div class="rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-half-o"></i>
+								<i class="fa fa-star-o"></i>
+
+								
+								
+							</div>
+						</div>
+						<div class="feature-details">
+							<h4>GOA</h4>
+							<p>Located on the southwestern coast of India, Goa is one of the top tourist destinations in the country.</p>
+							<div>
+								<span><i class="fa fa-map-marker"></i>Goa</span>
+								<span><i class="fa fa-sun-o"></i>4 days</span>
+								<span><i class="fa fa-moon-o"></i>3 Nights</span>
+							</div>
+				</div>
+	</div>
+</div>
+
+<div class="col-md-4">
+	<div class="feature-box">
+					<div class="feature-img">
+					<img src="Manali.png">
+					<div class="price">
+						<p>5000RS </p>
+						</div>
+							<div class="rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-half-o"></i>
+								<i class="fa fa-star-o"></i>
+
+								
+								
+							</div>
+						</div>
+						<div class="feature-details">
+							<h4>Manali</h4>
+							<p>Manali is a popular hill station located in the Indian state of Himachal Pradesh. It is situated in the Kullu Valley, along the Beas River and is surrounded by snow-capped mountains.</p>
+							<div>
+								<span><i class="fa fa-map-marker"></i>Manali</span>
+								<span><i class="fa fa-sun-o"></i>4 days</span>
+								<span><i class="fa fa-moon-o"></i>3 Nights</span>
+							</div>
+				</div>
+	</div>
+</div>
+
+<div class="col-md-4">
+	<div class="feature-box">
+					<div class="feature-img">
+					<img src="jammu1.jpg">
+					<div class="price">
+						<p>5000RS </p>
+						</div>
+							<div class="rating">
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-half-o"></i>
+								<i class="fa fa-star-o"></i>
+
+								
+								
+							</div>
+						</div>
+						<div class="feature-details">
+							<h4>Jammu and Kashmir</h4>
+							<p>Kashmir Valley is one of the top tourist destinations of India. Gulmarg, one of the most popular ski resort destinations in India, is also home to the world's highest green golf course.</p>
+							<div>
+								<span><i class="fa fa-map-marker">Jammu and Kashmir</i></span>
+								<span><i class="fa fa-sun-o"></i>4 days</span>
+								<span><i class="fa fa-moon-o"></i>3 Nights</span>
+							</div>
+				</div>
+	</div>
+</div>
+</div>
+</div>
+				
+<section class="banner">
+	<div class="banner-highlights">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<h2> Get 45% on top destination</h2>
+					<p>Book your tickets brfore september Month with this discount</p>
+				</div>
+				<div class="col-md-4">
+				<button type="button" class="booking-btn">Book Now</button>
+				
+			</div>
+			</div>
+		</div>
+		
+	</div>
+	
+</section>
+<section class="users-feedback">
+	<h1>User Review</h1>
+	<div class="container" >
+	<div class="row">
+		<div class="col-md-4">
+			<div class="user-review">
+				<p>It's a very good organization.</p>
+			
+				<h5>Lokman Hossain</h5>
+				<small>Manali</small>
+				
+			</div>
+			<img src="image/user.jpg">
+			
+		</div>
+		<div class="col-md-4">
+			<div class="user-review">
+				<p>It's a very good organization.</p>
+			
+				<h5>Sebabrata Podder Sirdarth</h5>
+				<small>Goa</small>
+				
+			</div>
+			<img src="image/user_2.jpg">
+		</div>
+		<div class="col-md-4">
+			<div class="user-review">
+				<p>It's a very good organization.</p>
+			
+				<h5>Maharaz Hasan Tamim</h5>
+				<small>Jammu and Kashmir</small>
+				
+			</div>
+			<img src="image/user_3.jpg">
+		</div>
+	</div>	
+	</div>
+	
+</section>
+<section class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+				<img src="image/travel_logo_1.png" class="footer-logo">
+				<p>We provide high class service to our customer.</p>
+			</div>
+			<div class="col-md-3">
+				<h4>Features</h4>
+				<p>Deals & Offers</p>
+				<p>Customer Reviews</p>
+				<p>cancelation policy</p>
+			</div>
+			<div class="col-md-3">
+				<h4>Contact</h4>
+				<p> <i class="fa fa-phone-square"></i>+91 8114509412</p>
+				<p> <i class="fa fa-envelope"></i>mdaayanhaque8114@gmil.com</p>
+				<p> <i class="fa fa-home"></i>Haldia, West bengal.</p>
+			</div>
+			<div class="col-md-3">
+				
+			</div>
+			
+		</div><hr>
+	</div>
+</section>
+</body>
+</html>
